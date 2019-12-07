@@ -29,7 +29,6 @@ function init(){
       ])
       .then(answers => {
         // Use user feedback for... whatever!!
-        console.log(answers);
         switch(answers.employeeType[0]) {
             case "Intern":
               // code block
@@ -82,10 +81,8 @@ function init(){
         }
 
       ]).then(answers => {
-        // console.log(answers);
         let employee = new Intern(answers.internName, answers.internID, answers.internEmail,  answers.internSchool);
         team.push(employee);
-        console.log(team);
 
         anotherEmployee(answers);
       })
@@ -122,7 +119,6 @@ function init(){
       }
 
     ]).then(answers => {
-      console.log(answers);
       team.push(new Engineer(answers.engineerName,  answers.engineerID, answers.engineerEmail, answers.engineerGithub));
 
       anotherEmployee(answers);
@@ -160,7 +156,6 @@ function getManagerQuestions(){
       }
 
     ]).then(answers => {
-      console.log(answers);
       team.push(new Manager(answers.managerName, answers.managerID, answers.managerEmail,  answers.managerOfficeNumber));
 
       anotherEmployee(answers);

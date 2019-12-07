@@ -32,9 +32,9 @@ Once all the information is provided by the user, the generated html should look
 ## Dependencies
 
 Make sure to npm install the following.
-jest
-mustache
-util
-inquirer
-fs
+- jest
+- mustache
+- util
+- inquirer
+- fs
 
